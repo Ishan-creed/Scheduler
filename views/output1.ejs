@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/new.css">
+    <title>Time Table</title>
+</head>
+
+<style>
+  body {
+  background-image: url('https://www.juit.ac.in/galleryimages/Academic%20Block1.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+  p{
+    text-align: left;
+  }
+</style>
+<body>
+
+  
+
+  
+<% for(i = 0 ; i<n ; i++){ %>
+
+  <div class="center">
+    <div class="property-card">
+      <a href="#">
+        <div class="property-image">
+          <div class="property-image-title">
+          </div>
+        </div></a>
+      <div class="property-description" style="height: fit-content;">
+        <h5 style="margin-bottom: 10px;"> Schedule </h5>
+        <b><p>Subject Code: <%=sbj_code[i]%> </p></b>
+        <b><p>Venue: <%=ven[i]%> </p></b>
+        <b><p>Time: <%=tm[i]%></p></b>
+        <b><p>Teacher Code: <%=tchr_code[i]%></p></b>
+        <b><p>Day: <%=d[i]%></p></b>
+      </div>
+        </div>
+      </a>
+    </div>
+  </div>
+<br>
+  <hr>
+  <br>
+
+<%}%>
+
+</body>
+</html>

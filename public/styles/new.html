@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deposit Calculator 211541 Keshav Singh</title>
+</head>
+
+<body>
+    <h1> Deposit Calculator</h1>
+    <form>
+        <label>Yearly contribution:</label>
+        <input type="number" id="contribution" min="1" step="1"><br><br>
+        <label>Yearly rate of interest:</label>
+        <input type="number" id="rate" min="0" max="100" step="0.01"><br><br>
+        <label>Number of years:</label>
+        <input type="number" id="years" min="1" step="1"><br><br>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <br><br>
+    <table id="resultTable" border="1">
+        <tr>
+            <th>Year</th>
+            <th>Yearly Contribution</th>
+            <th>Total Interest</th>
+            <th>Total Amount</th>
+        </tr>
+    </table>
+    <script>
+        function calculate() {
+            let contribution = parseInt(document.getElementById("contribution").value);
+            let rate = parseFloat(document.getElementById("rate").value);
+            let years = parseInt(document.getElementById("years").value);
+            let totalAmount = 0;
+            let totalInterest = 0;
+            let resultTable = document.getElementById("resultTable");
+            resultTable.innerHTML = "<tr><th>Year</th><th>Yearly Contribution</th><th>Total Interest</th > <th>Total Amount</th></tr > ";
+            for (let i = 1; i <= years; i++) {
+                let yearlyInterest = (totalAmount + contribution) * (rate / 100);
+                let yearlyAmount = contribution + yearlyInterest;
+                totalInterest += yearlyInterest;
+                totalAmount += yearlyAmount;
+
+                resultTable.innerHTML += "<tr><td>" + i + "</td><td>" + contribution + "</td><td>" +
+                    yearlyInterest.toFixed(2) + "</td><td>" + totalAmount.toFixed(2) + "</td></tr>";
+                contribution += 1000;
+            }
+        }
+    </script>
+</body>
+
+</html>

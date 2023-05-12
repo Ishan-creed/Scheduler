@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/new2.css">
+    <title>Time Table</title>
+</head>
+
+<style>
+  body {
+  background-image: url('https://www.juit.ac.in/galleryimages/Academic%20Block1.JPG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+  p{
+    text-align: center;
+  }
+</style>
+<body>
+
+  
+    <% for(i = 0 ; i<arr ; i++){ %>
+
+
+  <div class="center">
+    <div class="property-card">
+      <a href="#">
+        <div class="property-image">
+          <div class="property-image-title">
+          </div>
+        </div></a>
+      <div class="property-description" style="text-align: center;">
+        <h5 style="margin-bottom: 30px;"> Venue - <%=Venue %> </h5>
+        <b><h3>Day: <b><%=d[i]%></b> </h3></b>
+        <b><p>9-10 AM: <b><%=Nine[i]%></b> </p></b>
+        <b><p>10-11 AM: <b><%=Ten[i]%></b> </p></b>
+        <b><p>11-12 PM: <b><%=Eleven[i]%></b> </p></b>
+        <b><p>12-1 PM: <b><%=Twlve[i]%></b> </p></b>
+        <b><p>1-2 PM: <b><%=One[i]%></b> </p></b>
+        <b><p>2-3 PM: <b><%=Two[i]%></b> </p></b>
+        <b><p>3-4 PM: <b><%=Three[i]%></b> </p></b>
+        <b><p>4-5 PM: <b><%=Four[i]%></b> </p></b>
+      </div>
+        </div>
+      </a>
+    </div>
+  </div>
+<br>
+  <hr>
+  <br>
+
+<%}%>
+
+</body>
+</html>

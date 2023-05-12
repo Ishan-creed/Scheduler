@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  body {
+    background-image: linear-gradient(90deg, #e5e5e5 50%, #5479fa 50%);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .container1 {
+    /* background-color: #e8ecf5; */
+    width: 50%;
+  }
+  
+  .logo {
+    margin-top: -2rem;
+  }
+  
+  img {
+    height: 8rem;
+  }
+  
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: #f5f6fa;
+    height: 60vh;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  .container2 {
+    /* background-color: #5479fa; */
+    width: 50%;
+  }
+  
+  .rightContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: white;
+    background-color: #6788ff;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    width: 60%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  #LoginButton {
+    background-color: #5479fa;
+    color: white;
+    border-radius: 5px;
+    border-color: white;
+    border: 0;
+    font-size: 15px;
+  }
+  
+  .login-input {
+    width: 16vw;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  
+    font-size: 15px;
+    margin-top: 2rem;
+    border: 0;
+  }
+  
+  .juit {
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  .approval {
+    font-size: 120%;
+    /* font-size: 200%; */
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    font-size: 15px;
+  }
+  
+  .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .container1 {
+      background-image: linear-gradient(90deg, #e5e5e5 50%, #5479fa 50%);
+      width: 100%;
+    }
+  
+    .leftContainer {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  
+    .container2 {
+      display: none;
+    }
+    img {
+      height: 7rem;
+    }
+  
+    .leftContainer {
+      border-radius: 15px;
+    }
+  
+    #LoginButton {
+      margin-top: 1.5rem;
+      width: 25vw;
+      height: 25px;
+    }
+  
+    .login-input {
+      width: 25vw;
+      height: 25px;
+      font-size: 10px;
+    }
+  }
